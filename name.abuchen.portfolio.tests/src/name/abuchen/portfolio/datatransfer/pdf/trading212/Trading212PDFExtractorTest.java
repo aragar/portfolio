@@ -161,21 +161,21 @@ public class Trading212PDFExtractorTest
 
         // check tax refund transactions
         assertThat(results, hasItem(taxRefund( //
-                        hasDate("2026-01-06T08:12:29"), hasShares(0), //
+                        hasDate("2026-01-06T08:12:29"), hasShares(0.00), //
                         hasSource("Aktivitaetsauszug01.txt"), //
                         hasNote("Auftrags-ID-Nr.: 44466988302"), //
                         hasAmount("EUR", 0.01), hasGrossValue("EUR", 0.01), //
                         hasTaxes("EUR", 0.00), hasFees("EUR", 0.00))));
 
         assertThat(results, hasItem(taxRefund( //
-                        hasDate("2026-01-06T08:12:29"), hasShares(0), //
+                        hasDate("2026-01-06T08:12:29"), hasShares(0.00), //
                         hasSource("Aktivitaetsauszug01.txt"), //
                         hasNote("Auftrags-ID-Nr.: 44466988303"), //
                         hasAmount("EUR", 0.02), hasGrossValue("EUR", 0.02), //
                         hasTaxes("EUR", 0.00), hasFees("EUR", 0.00))));
 
         assertThat(results, hasItem(taxRefund( //
-                        hasDate("2026-01-06T08:12:56"), hasShares(0), //
+                        hasDate("2026-01-06T08:12:56"), hasShares(0.00), //
                         hasSource("Aktivitaetsauszug01.txt"), //
                         hasNote("Auftrags-ID-Nr.: 44501435029"), //
                         hasAmount("EUR", 0.01), hasGrossValue("EUR", 0.01), //
